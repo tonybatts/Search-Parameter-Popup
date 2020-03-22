@@ -1,30 +1,29 @@
 //Dynamic popup based on search parameter
-const popUp = document.querySelector('#popup-wrapper')
-const popupHeading = document.querySelector("h4")
-const closePopup = document.querySelector("#close-popup")
+
 
 const buildModal = (fromParam, style) => {
-  popupHeading.style.color = style;
-  popupHeading.innerHTML = `Hello, you came from ${fromParam} parameter`
-  // Activate first popup based on the first parameter
-  popUp.style.display = "block"
-  //add listener to parent so user can dismiss by clicking anywhere on the modal - x if for clarity
+	const popUp = document.querySelector('#popup-wrapper')
+	const popupHeading = document.querySelector("h4")
+	const closePopup = document.querySelector("#close-popup")
+  	popupHeading.style.color = style;
+  	popupHeading.innerHTML = `Hello, you came from ${fromParam} parameter`
+  	// Activate first popup based on the first parameter
+  	popUp.style.display = "block"
+  	//add listener to parent so user can dismiss by clicking anywhere on the modal - x if for clarity
 	closePopup.parentNode.onclick = function() { 
-  popUp.style.display = "none"
+  	popUp.style.display = "none"
 	// Remove query from url
 	window.history.pushState("object or string", "Page Title", "/");
-		}
+	}
 }
 
 const paramPopup = () => {
 	if (window.location.href.includes("First")) {
-    buildModal("First","#04C2C9");
-		
+    	  buildModal("First","#04C2C9");
 	} else if (window.location.href.includes("Second")) { 
-    buildModal("Second","#E31B6D");
-		
+    	  buildModal("Second","#E31B6D");	
 	} else {
-		console.log("User didn't come from either parameter")
+	  console.log("User didn't come from either parameter")
 	}
 }
 
