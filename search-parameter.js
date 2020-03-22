@@ -47,15 +47,20 @@ const paramPopup = () => {
 
 // Button press will change the current url parameter in order for us to grab that parameter with Javascript to trigger the popup. I am doing this for it to work on code pen, on a normal site you would pass the url query via a redirect or something. 
 
+const firstButton = () => {
 document.querySelector("#addFirstParam").addEventListener("click", function () {
-    window.history.pushState({}, document.title, "/" + "?FirstParam");
-    console.log(window.location.href)
-    paramPopup();
-})
+  window.history.pushState({}, document.title, "/" + "?FirstParam");
+  console.log(window.location.href)
+  paramPopup();
+})}
 
+const secondButton = () => {
 document.querySelector("#addSecondParam").addEventListener("click", function () {
-    window.history.pushState({}, document.title, "/" + "?SecondParam");
-    console.log(window.location.href)
-    paramPopup();
-})
+  window.history.pushState({}, document.title, "/" + "?SecondParam");
+  console.log(window.location.href)
+  paramPopup();
+})}
+
+firstButton();
+secondButton();
 
