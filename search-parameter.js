@@ -9,7 +9,7 @@ const buildModal = (fromParam, style) => {
   	popupHeading.innerHTML = `Hello, you came from ${fromParam} parameter`
   	// Activate first popup based on the first parameter
   	popUp.style.display = "block"
-  	//add listener to parent so user can dismiss by clicking anywhere on the modal - x if for clarity
+  	//add listener to parent so user can dismiss by clicking anywhere on the modal 
 	closePopup.parentNode.onclick = function() { 
   	popUp.style.display = "none"
 	// Remove query from url
