@@ -5,4 +5,4 @@
 
 I created this when two companies merged and wanted users clicking on their old site links to be informed of the merge. The old sites were redirected to the new site with a search parameter specific to those sites. 
 
-Please note the attached code will not work locally because the javascript can access the local href. 
+Please note the attached code will not work locally because the javascript can access the local URL. 
