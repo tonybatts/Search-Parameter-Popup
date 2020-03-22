@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #252934;
+}
+body h4 {
+  font-size: 25px;
+}
+
+body p {
+  font-size: 18px;
+  color: white;
+}
+
+body h1 {
+  color: white;
+}
+
+#text p {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#explanation {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+#explanation p {
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 20px;
+}
+
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#flex > div {
+  margin: 10px;
+}
+
+#addFirstParam {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #04C2C9;
+  color: #04C2C9;
+  min-width: 150px;
+}
+
+#addSecondParam {
+  display: flex;
+  justify-content: center;
+  min-width: 150px;
+  border: 2px solid black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #E31B6D;
+  color: #E31B6D;
+}
+
+#popup-wrapper {
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#close-popup:after {
+ content: 'x';
+ font-weight: 300;
+ font-family: Arial, sans-serif;
+}
+
+#close-popup {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+#popup {
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  
+  
+}
+
+#text {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #explanation, #explanation p {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+  
+  #explanation h1 {
+    font-size: 20px;
+  }
+  
+}
+
