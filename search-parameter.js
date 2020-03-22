@@ -4,7 +4,7 @@ const popupHeading = document.querySelector("h4")
 const closePopup = document.querySelector("#close-popup")
 
 const paramPopup = () => {
-    if (window.location.href.indexOf("First") > -1) {
+    if (window.location.href.includes("First")) {
         //Customize popup content based of site user came from
         popupHeading.style.color = "#04C2C9"
         popupHeading.innerHTML = "Hello, you came from first parameter"
@@ -16,7 +16,7 @@ const paramPopup = () => {
             window.history.pushState("object or string", "Page Title", "/");
         }
 
-    } else if (window.location.href.indexOf("Second") > -1) {
+    } else if (window.location.href.includes("Second")) {
         //Customize popup content based of site user came from
         popupHeading.style.color = "#E31B6D"
         popupHeading.innerHTML = "Hello, you came from second parameter"
